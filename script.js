@@ -1,6 +1,6 @@
 const fetchData = async (city) => {
     try {
-      const response = await fetch(`/.netlify/functions/weather-api?city=${city}`);
+      const response = await fetch(`https://weather-we.netlify.app/.netlify/functions/weather-api?city=${city}`);
       const data = await response.json();
       return data;
     } catch (error) {
@@ -8,7 +8,6 @@ const fetchData = async (city) => {
       return null;
     }
   };
-  
   // Update the getData function
   const getData = async (event) => {
     event.preventDefault();
