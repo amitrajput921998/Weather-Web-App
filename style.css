@@ -1,0 +1,98 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the background color and center the content */
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .searchData {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cityWeatherData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .details {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 0;
+    color: #333;
+  }
+  
+  #logoImage {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Cloud Animation */
+  body {
+    /* Remove the background color */
+    background-color: transparent;
+    /* Add a background image */
+    background-image: url('./img/cloud.jpg');
+    /* Set the background image to cover the entire body */
+    background-size: cover;
+    /* Position the background image at the center */
+    background-position: center center;
+    /* Set the background image to repeat horizontally */
+    background-repeat: repeat-x;
+    /* Add animation to the background image */
+    animation: cloudAnimation 60s linear infinite;
+  }
+  
+  @keyframes cloudAnimation {
+    0% {
+      /* Move the background image to the left */
+      background-position: 0 0;
+    }
+    100% {
+      /* Move the background image to the right */
+      background-position: 100% 0;
+    }
+  }
+  
