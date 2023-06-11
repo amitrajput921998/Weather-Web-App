@@ -12,11 +12,17 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200,
       body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     };
   } catch (error) {
     return {
       statusCode: 500,
       body: JSON.stringify({ message: 'Internal server error' }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     };
   }
 };
